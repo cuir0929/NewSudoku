@@ -51,30 +51,30 @@ public class BoxCell : Cell
 
     public void MoveBox(BoxCell boxCell, Vector3 newPosition)
     {
-        int boxCellValue = boxCell.number;
-        Destroy(boxCell.gameObject);
-        InitBoxCell(boxCellValue, newPosition);
-        //boxRb.MovePosition(newPosition);
+        // int boxCellValue = boxCell.number;
+        // Destroy(boxCell.gameObject);
+        // InitBoxCell(boxCellValue, newPosition);
+        boxRb.MovePosition(newPosition);
     }
 
-    public void DestroyBox()
-    {
-        Destroy(gameObject);
-    }
+    // public void DestroyBox()
+    // {
+    //     Destroy(gameObject);
+    // }
 
-    public void SpawnBox(Cell cell, int number)
-    {
-        this.number = number;
-        numberText.text = number.ToString();
-        this.cell = cell;
-        this.cell.isBox = true;
-        transform.position = cell.transform.position;
-    }
+    // public void SpawnBox(Cell cell, int number)
+    // {
+    //     this.number = number;
+    //     numberText.text = number.ToString();
+    //     this.cell = cell;
+    //     this.cell.isBox = true;
+    //     transform.position = cell.transform.position;
+    // }
 
-    public void MoveTo(Cell cell)
-    {
-        this.cell = cell;
-        this.cell.isBox = true;
-        transform.position = cell.transform.position;
-    }
+    // public void MoveTo(Cell cell)
+    // {
+    //     this.cell = cell;
+    //     this.cell.isBox = true;
+    //     transform.position = cell.transform.position;
+    // }
 }

@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -96,8 +97,7 @@ public class Player : MonoBehaviour
 
     private bool BoxIsValid(Vector2Int newPosition)
     {
-        // is or isnot one
-        // nextPos is or not wall
+
         if (direction == Vector2Int.up)
         {
             Vector2Int nextPos = new Vector2Int(newPosition.x, newPosition.y - 1);
@@ -183,7 +183,16 @@ public class Player : MonoBehaviour
         cells[targetBoxPos.y, targetBoxPos.x] = currentBoxCell;
         cells[targetBoxPos.y, targetBoxPos.x].isBox = true;
 
+        if (currentCell is BoxCell)
+        {
+            Cell oldPosCell = currentCell.AddComponent<Cell>();
+            oldPosCell.Init(0);
+            cells[currentBoxPos.y, currentBoxPos.x] = oldPosCell;
+        }
+        // cells[currentBoxPos.y, currentBoxPos.x].isBox = false;
+        // cells[currentBoxPos.y, currentBoxPos.x].Init(0);
         
+
         //cells[currentBoxPos.y, currentBoxPos.x].isBox = false;
         //cells[currentBoxPos.y, currentBoxPos.x] = currentCell.Init(0);
         //nextCell = currentBoxCell;

@@ -138,11 +138,11 @@ public class GameManager : MonoBehaviour
                         if (cellValue != 0)
                         {
                             BoxCell boxCell = Instantiate(boxCellPrefab, board.transform);
-                            Cell cellCell = cells[cell.row, cell.col];
-                            //boxCell.InitBoxCell(cellValue, cellPosition);
-                            boxCell.SpawnBox(cellCell, cellValue);
-                            //cells[cell.row, cell.col] = boxCell;
-                            //cells[cell.row, cell.col].isBox = true;
+                            //Cell cellCell = cells[cell.row, cell.col];
+                            boxCell.InitBoxCell(cellValue, cellPosition);
+                            //boxCell.SpawnBox(cellCell, cellValue);
+                            cells[cell.row, cell.col] = boxCell;
+                            cells[cell.row, cell.col].isBox = true;
                         }
                         else
                         {
@@ -395,6 +395,12 @@ public class GameManager : MonoBehaviour
     {
         if (hasGameFinished || cell.isLocked)
         {
+            return;
+        }
+
+        if (cell.isBox)
+        {
+            Debug.Log("cell is box is true");
             return;
         }
 

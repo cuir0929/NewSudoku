@@ -57,34 +57,64 @@ public class Cell : MonoBehaviour
         switch (currentState)
         {
             case CellState.Initial:
-                txtNumber.color = initialNumberColor;
-                buttonImage.color = buttonImageColor;
+                if (txtNumber != null && buttonImage != null)
+                {
+                    txtNumber.color = initialNumberColor;
+                    buttonImage.color = buttonImageColor;
+                }
+                //txtNumber.color = initialNumberColor;
+                //buttonImage.color = buttonImageColor;
                 break;
 
             case CellState.Correct:
-                txtNumber.color = correctNumberColor;
-                buttonImage.color = buttonImageColor;
+                if (txtNumber != null && buttonImage != null)
+                {
+                    txtNumber.color = correctNumberColor;
+                    buttonImage.color = buttonImageColor;
+                }
+                //txtNumber.color = correctNumberColor;
+                //buttonImage.color = buttonImageColor;
                 break;
 
             case CellState.Incorrect:
-                txtNumber.color = incorrectNumberColor;
-                buttonImage.color = buttonImageColor;
+                if (txtNumber != null && buttonImage != null)
+                {
+                    txtNumber.color = incorrectNumberColor;
+                    buttonImage.color = buttonImageColor;
+                }
+                //txtNumber.color = incorrectNumberColor;
+                //buttonImage.color = buttonImageColor;
                 break;
 
             case CellState.Highlighted:
-                txtNumber.color = isLocked ? initialNumberColor :
-                                  isIncorrect ? incorrectNumberColor : correctNumberColor;
-                buttonImage.color = Color.white;
+                if (txtNumber != null && buttonImage != null)
+                {
+                    txtNumber.color = isIncorrect ? incorrectNumberColor : correctNumberColor;
+                    buttonImage.color = Color.white;
+                }
+                // txtNumber.color = isLocked ? initialNumberColor :
+                //                   isIncorrect ? incorrectNumberColor : correctNumberColor;
+                //buttonImage.color = Color.white;
                 break;
 
             case CellState.Selected:
-                txtNumber.color = isIncorrect ? incorrectNumberColor : correctNumberColor;
-                buttonImage.color = Color.white;
+                if (txtNumber != null && buttonImage != null)
+                {
+                    txtNumber.color = isIncorrect ? incorrectNumberColor : correctNumberColor;
+                    buttonImage.color = Color.white;
+                }
+                // txtNumber.color = isIncorrect ? incorrectNumberColor : correctNumberColor;
+                // buttonImage.color = Color.white;
                 break;
 
             case CellState.Win:
-                txtNumber.color = winNumberColor;
-                buttonImage.color = buttonImageColor;
+                if (txtNumber != null && buttonImage != null)
+                {
+                    txtNumber.color = winNumberColor;
+                    buttonImage.color = buttonImageColor;
+                }
+                //txtNumber.color = winNumberColor;
+                //buttonImage.color = buttonImageColor;
                 break;
 
             case CellState.Box:
