@@ -14,6 +14,7 @@ public class Cell : MonoBehaviour
         Highlighted,
         Selected,
         Win,
+        Box,
     }
 
     [HideInInspector] public int value;
@@ -23,10 +24,10 @@ public class Cell : MonoBehaviour
     [HideInInspector] public bool isIncorrect;
 
     [Header("Text Colors")]
-    [SerializeField] private Color initialNumberColor = new Color(0.4f, 0.25f, 0.15f, 1f);    // Éî×ØÉ« (#663F26)
-    [SerializeField] private Color correctNumberColor = new Color(0.2f, 0.4f, 0.2f, 1f);      // ÉîÂÌÉ« (#336633)
-    [SerializeField] private Color incorrectNumberColor = new Color(0.7f, 0.2f, 0.2f, 1f);    // ÉîºìÉ« (#B33333)
-    [SerializeField] private Color winNumberColor = new Color(0.25f, 0.35f, 0.6f, 1f);        // ÉîÀ¶É« (#405C99)
+    [SerializeField] private Color initialNumberColor = new Color(0.4f, 0.25f, 0.15f, 1f);    // ï¿½ï¿½ï¿½ï¿½É« (#663F26)
+    [SerializeField] private Color correctNumberColor = new Color(0.2f, 0.4f, 0.2f, 1f);      // ï¿½ï¿½ï¿½ï¿½É« (#336633)
+    [SerializeField] private Color incorrectNumberColor = new Color(0.7f, 0.2f, 0.2f, 1f);    // ï¿½ï¿½ï¿½É« (#B33333)
+    [SerializeField] private Color winNumberColor = new Color(0.25f, 0.35f, 0.6f, 1f);        // ï¿½ï¿½ï¿½ï¿½É« (#405C99)
 
     [Header("Button Colors")]
     [SerializeField] private Color32 buttonImageColor = new Color32(208, 172, 139, 255);
@@ -84,6 +85,10 @@ public class Cell : MonoBehaviour
             case CellState.Win:
                 txtNumber.color = winNumberColor;
                 buttonImage.color = buttonImageColor;
+                break;
+
+            case CellState.Box:
+                isBox = true;
                 break;
         }
     }

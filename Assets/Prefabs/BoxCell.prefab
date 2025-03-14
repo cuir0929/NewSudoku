@@ -68,7 +68,10 @@ MonoBehaviour:
     rgba: 4287343824
   boxRb: {fileID: 0}
   numberText: {fileID: 9059713197839894335}
-  inputNumText: {fileID: 7405164130338480030}
+  buttonNumber: {fileID: 4558798908661627596}
+  buttonImage: {fileID: 1225977283850378478}
+  boxTxtNumber: {fileID: 7405164130338480030}
+  currentState: 6
 --- !u!50 &3095511838192840092
 Rigidbody2D:
   serializedVersion: 4

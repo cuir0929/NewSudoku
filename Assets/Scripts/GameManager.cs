@@ -110,7 +110,7 @@ public class GameManager : MonoBehaviour
             for (int j = 0; j < GRID_SIZE; j++)
             {
                 initialPuzzle[i, j] = puzzleGrid[i, j];
-                Debug.Log("puzzlegrid" + puzzleGrid[i, j]);
+                //Debug.Log("puzzlegrid" + puzzleGrid[i, j]);
             }
         }
 
@@ -138,9 +138,11 @@ public class GameManager : MonoBehaviour
                         if (cellValue != 0)
                         {
                             BoxCell boxCell = Instantiate(boxCellPrefab, board.transform);
-                            boxCell.InitBoxCell(cellValue, cellPosition);
-                            cells[cell.row, cell.col] = boxCell;
-                            cells[cell.row, cell.col].isBox = true;
+                            Cell cellCell = cells[cell.row, cell.col];
+                            //boxCell.InitBoxCell(cellValue, cellPosition);
+                            boxCell.SpawnBox(cellCell, cellValue);
+                            //cells[cell.row, cell.col] = boxCell;
+                            //cells[cell.row, cell.col].isBox = true;
                         }
                         else
                         {
