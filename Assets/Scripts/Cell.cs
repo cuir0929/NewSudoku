@@ -147,4 +147,9 @@ public class Cell : MonoBehaviour
     {
         UpdateState(CellState.Selected);
     }
+
+    private void OnDestroy()
+    {
+        buttonNumber.onClick.RemoveListener(OnCellClick);
+    }
 }
