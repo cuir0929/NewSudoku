@@ -16,30 +16,7 @@ public class BoxCell : Cell
     private void Awake()
     {
         boxRb = GetComponent<Rigidbody2D>();
-        //buttonNumber = GetComponent<Button>();
     }
-
-    //public void Init(int newValue)
-    //{
-    //    // isIncorrect = false -> number is wrong
-    //    // isIncorrect = true -> number is right
-    //    isIncorrect = false;
-    //    value = newValue;
-    //    inputBtn.interactable = value == 0;
-
-    //    if (value == 0)
-    //    {
-    //        isLocked = false;
-    //        inputNumText.text = "";
-    //    }
-    //    else
-    //    {
-    //        isLocked = true;
-    //        inputNumText.text = value.ToString();
-    //    }
-
-    //    UpdateState(CellState.Initial);
-    //}
 
     public void InitBoxCell(int newNum, Vector3 position)
     {
@@ -51,30 +28,6 @@ public class BoxCell : Cell
 
     public void MoveBox(BoxCell boxCell, Vector3 newPosition)
     {
-        // int boxCellValue = boxCell.number;
-        // Destroy(boxCell.gameObject);
-        // InitBoxCell(boxCellValue, newPosition);
         boxRb.MovePosition(newPosition);
     }
-
-    // public void DestroyBox()
-    // {
-    //     Destroy(gameObject);
-    // }
-
-    // public void SpawnBox(Cell cell, int number)
-    // {
-    //     this.number = number;
-    //     numberText.text = number.ToString();
-    //     this.cell = cell;
-    //     this.cell.isBox = true;
-    //     transform.position = cell.transform.position;
-    // }
-
-    // public void MoveTo(Cell cell)
-    // {
-    //     this.cell = cell;
-    //     this.cell.isBox = true;
-    //     transform.position = cell.transform.position;
-    // }
 }

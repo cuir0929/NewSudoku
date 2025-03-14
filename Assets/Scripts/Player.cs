@@ -185,7 +185,7 @@ public class Player : MonoBehaviour
 
         if (currentCell is BoxCell)
         {
-            Cell oldPosCell = currentCell.AddComponent<Cell>();
+            Cell oldPosCell = new GameObject("Cell").AddComponent<Cell>();
             oldPosCell.Init(0);
             cells[currentBoxPos.y, currentBoxPos.x] = oldPosCell;
         }
