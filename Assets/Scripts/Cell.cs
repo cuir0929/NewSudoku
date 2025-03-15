@@ -33,6 +33,8 @@ public class Cell : MonoBehaviour
     [SerializeField] private Color32 buttonImageColor = new Color32(208, 172, 139, 255);
     
     private TextMeshProUGUI txtNumber;
+    public TextMeshProUGUI topNumber;
+    public Image border;
     private Button buttonNumber;
     private Image buttonImage;
     private CellState currentState = CellState.Initial;
@@ -41,10 +43,23 @@ public class Cell : MonoBehaviour
     {
         buttonNumber = GetComponent<Button>();
         buttonNumber.onClick.AddListener(OnCellClick);
-        txtNumber = GetComponentInChildren<TextMeshProUGUI>();
+        txtNumber = GetComponentsInChildren<TextMeshProUGUI>()[0];
+        //topNumber = GetComponentsInChildren<TextMeshProUGUI>()[1];
+        //border = GetComponentInChildren<Image>();
         buttonImage = GetComponent<Image>();
     }
 
+    private void Start()
+    {
+        if (border != null)
+        {
+            border.enabled = false;
+        }
+        if (topNumber != null)
+        {
+            topNumber.enabled = false;
+        }
+    }
     public Vector3 GetCellGlobalPosition()
     {
         return transform.position;
@@ -178,8 +193,8 @@ public class Cell : MonoBehaviour
         UpdateState(CellState.Selected);
     }
 
-    private void OnDestroy()
-    {
-        buttonNumber.onClick.RemoveListener(OnCellClick);
-    }
+    // private void OnDestroy()
+    // {
+    //     buttonNumber.onClick.RemoveListener(OnCellClick);
+    // }
 }

@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -7,6 +6,8 @@ public class Player : MonoBehaviour
     public Vector2Int direction = Vector2Int.zero;
     //public GridNum gridNum;
     public Cell[,] cells;
+    public BoxCell boxCellPrefab;
+    //public Canvas board;
     //public float moveSpeed = 5f;
 
     private Rigidbody2D rb;
@@ -29,37 +30,37 @@ public class Player : MonoBehaviour
         {
             newPosition = new Vector2Int(newPosition.x, newPosition.y - 1);
             direction = Vector2Int.up;
-            Debug.Log("current position : " + newPosition);
+            Debug.Log("current position : " + position);
             MoveTo(newPosition);
 
-            Debug.Log("target position : " + newPosition);
+            Debug.Log("target position : " + position);
         }
         else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
             newPosition = new Vector2Int(newPosition.x - 1, newPosition.y);
             direction = Vector2Int.left;
-            Debug.Log("current position : " + newPosition);
+            Debug.Log("current position : " + position);
             MoveTo(newPosition);
 
-            Debug.Log("target position : " + newPosition);
+            Debug.Log("target position : " + position);
         }
         else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
             newPosition = new Vector2Int(newPosition.x, newPosition.y + 1);
             direction = Vector2Int.down;
-            Debug.Log("current position : " + newPosition);
+            Debug.Log("current position : " + position);
             MoveTo(newPosition);
 
-            Debug.Log("target position : " + newPosition);
+            Debug.Log("target position : " + position);
         }
         else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
             newPosition = new Vector2Int(newPosition.x + 1, newPosition.y);
             direction = Vector2Int.right;
-            Debug.Log("current position : " + newPosition);
+            Debug.Log("current position : " + position);
             MoveTo(newPosition);
 
-            Debug.Log("target position : " + newPosition);
+            Debug.Log("target position : " + position);
         }
     }
 
@@ -170,6 +171,7 @@ public class Player : MonoBehaviour
         Vector3 boxOldPos = currentCell.transform.position;
         Vector3 boxNewPos = nextCell.transform.position;
         BoxCell currentBoxCell = currentCell as BoxCell;
+        int currentBoxCellNum = currentBoxCell.number;
         //BoxCell nextBoxCell = nextCell as BoxCell;
 
         if (currentBoxCell == null)
@@ -178,16 +180,19 @@ public class Player : MonoBehaviour
             return;
         }
 
-        currentBoxCell.MoveBox(currentBoxCell, boxNewPos);
-
-        cells[targetBoxPos.y, targetBoxPos.x] = currentBoxCell;
+        //currentBoxCell.MoveBox(currentBoxCell, boxNewPos);
+        Destroy(currentBoxCell.gameObject);
+        BoxCell newBoxCell = Instantiate(boxCellPrefab);
+        newBoxCell.InitBoxCell(currentBoxCellNum, boxNewPos);
+        cells[targetBoxPos.y, targetBoxPos.x] = newBoxCell;
         cells[targetBoxPos.y, targetBoxPos.x].isBox = true;
 
         if (currentCell is BoxCell)
         {
-            Cell oldPosCell = new GameObject("Cell").AddComponent<Cell>();
-            oldPosCell.Init(0);
-            cells[currentBoxPos.y, currentBoxPos.x] = oldPosCell;
+            cells[currentBoxPos.y, currentBoxPos.x].isBox = false;
+            cells[currentBoxPos.y, currentBoxPos.x].Init(0);
+            Debug.Log("position : " + currentBoxPos + "cells : " + cells[currentBoxPos.y, currentBoxPos.x]);
+            Debug.Log("position : " + targetBoxPos + "cells : " + cells[targetBoxPos.y, targetBoxPos.x]);
         }
         // cells[currentBoxPos.y, currentBoxPos.x].isBox = false;
         // cells[currentBoxPos.y, currentBoxPos.x].Init(0);
@@ -199,7 +204,8 @@ public class Player : MonoBehaviour
         //nextCell.isBox = true;
         //cells[targetBoxPos.y, targetBoxPos.x] = currentBoxCell;
         //currentBoxCell.DestroyBox();
-        Debug.Log("position : "+ currentBoxPos+ "cells : " + cells[currentBoxPos.y, currentBoxPos.x]);
+        Debug.Log("position : " + currentBoxPos + "cells : " + cells[currentBoxPos.y, currentBoxPos.x]);
+        Debug.Log("position : " + targetBoxPos + "cells : " + cells[targetBoxPos.y, targetBoxPos.x]);
         // currentCell = currentBoxCell.GetComponent<Cell>();
         // currentCell.Init(0);
         // currentCell.isBox = false;

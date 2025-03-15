@@ -7,7 +7,7 @@ public class BoxCell : Cell
     public Cell cell { get; private set; }
     public Rigidbody2D boxRb;
     public TextMeshProUGUI numberText;
-    private int number;
+    public int number;
     //public Button buttonNumber;
     //public Image buttonImage;
     public TextMeshProUGUI boxTxtNumber;
@@ -30,4 +30,9 @@ public class BoxCell : Cell
     {
         boxRb.MovePosition(newPosition);
     }
+
+    // public Cell ConvertToCell()
+    // {
+        
+    // }
 }
