@@ -206,7 +206,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8216549
 RectTransform:
   m_ObjectHideFlags: 0
@@ -340,7 +340,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &12423512
 RectTransform:
   m_ObjectHideFlags: 0
@@ -415,7 +415,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &12715668
 RectTransform:
   m_ObjectHideFlags: 0
@@ -490,7 +490,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &21469329
 RectTransform:
   m_ObjectHideFlags: 0
@@ -565,7 +565,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &26836226
 RectTransform:
   m_ObjectHideFlags: 0
@@ -978,8 +978,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1257765278}
-  border: {fileID: 839464042}
 --- !u!1 &59197109
 GameObject:
   m_ObjectHideFlags: 0
@@ -1265,7 +1263,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &74432545
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1485,8 +1483,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 168533453}
-  border: {fileID: 451798153}
 --- !u!1 &80349039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1504,7 +1500,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &80349040
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1713,7 +1709,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &90304472
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1933,8 +1929,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1455054367}
-  border: {fileID: 1165139301}
 --- !u!1 &91535603
 GameObject:
   m_ObjectHideFlags: 0
@@ -1952,7 +1946,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &91535604
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2027,7 +2021,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &93270971
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2161,7 +2155,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &95288809
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2236,7 +2230,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &97598181
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2370,7 +2364,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &108943629
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2649,8 +2643,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1433058671}
-  border: {fileID: 1627949666}
 --- !u!1 &118935400
 GameObject:
   m_ObjectHideFlags: 0
@@ -2802,7 +2794,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &121194045
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3081,8 +3073,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 333318081}
-  border: {fileID: 74432546}
 --- !u!1 &149842255
 GameObject:
   m_ObjectHideFlags: 0
@@ -3100,7 +3090,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &149842256
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3379,8 +3369,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 292962024}
-  border: {fileID: 717574837}
 --- !u!1 &160327781
 GameObject:
   m_ObjectHideFlags: 0
@@ -3532,7 +3520,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &168533452
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3666,7 +3654,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &177120746
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4336,7 +4324,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &203752782
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4470,7 +4458,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &204570632
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4604,7 +4592,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &212915498
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4679,7 +4667,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &214440566
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5148,7 +5136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &249480884
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5282,7 +5270,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &253390082
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5416,7 +5404,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &255760052
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5636,8 +5624,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 764850514}
-  border: {fileID: 1225147001}
 --- !u!1 &269323437
 GameObject:
   m_ObjectHideFlags: 0
@@ -6191,7 +6177,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &292962023
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6470,8 +6456,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 2022137842}
-  border: {fileID: 1477759797}
 --- !u!1 &298345461
 GameObject:
   m_ObjectHideFlags: 0
@@ -6623,7 +6607,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &300956337
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6698,7 +6682,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &302504186
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6918,8 +6902,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1909201414}
-  border: {fileID: 444873044}
 --- !u!1 &333318079
 GameObject:
   m_ObjectHideFlags: 0
@@ -6937,7 +6919,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &333318080
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7071,7 +7053,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &342200238
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7291,8 +7273,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1659745318}
-  border: {fileID: 1283363755}
 --- !u!1 &349262485
 GameObject:
   m_ObjectHideFlags: 0
@@ -7310,7 +7290,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &349262486
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7385,7 +7365,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &370917967
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7460,7 +7440,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &374635948
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7728,7 +7708,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &384694194
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8082,8 +8062,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 465564438}
-  border: {fileID: 1699489309}
 --- !u!1 &402199805
 GameObject:
   m_ObjectHideFlags: 0
@@ -8101,7 +8079,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &402199806
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8235,7 +8213,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &411822358
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8310,7 +8288,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &425788575
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8519,7 +8497,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &437680770
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8920,7 +8898,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &444873043
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8995,7 +8973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &451798152
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9137,7 +9115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &465564437
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9673,7 +9651,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &487267707
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9882,7 +9860,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &493563151
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10102,8 +10080,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1819687118}
-  border: {fileID: 1272384229}
 --- !u!1 &514464197
 GameObject:
   m_ObjectHideFlags: 0
@@ -10121,7 +10097,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &514464198
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10481,7 +10457,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &538709673
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10749,7 +10725,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &550273235
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10824,7 +10800,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &561669522
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11103,8 +11079,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1916011561}
-  border: {fileID: 21469330}
 --- !u!1 &576910112
 GameObject:
   m_ObjectHideFlags: 0
@@ -11122,7 +11096,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &576910113
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11476,8 +11450,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 883316401}
-  border: {fileID: 628229776}
 --- !u!1 &598147264
 GameObject:
   m_ObjectHideFlags: 0
@@ -11629,7 +11601,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &600404738
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11763,7 +11735,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &600947176
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11897,7 +11869,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &604799790
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11972,7 +11944,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &608673885
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12787,8 +12759,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1414864271}
-  border: {fileID: 300956338}
 --- !u!1 &620680914
 GameObject:
   m_ObjectHideFlags: 0
@@ -13085,8 +13055,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1568043346}
-  border: {fileID: 1758481579}
 --- !u!1 &624043382
 GameObject:
   m_ObjectHideFlags: 0
@@ -13372,7 +13340,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &628229775
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13592,8 +13560,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1335294251}
-  border: {fileID: 1166260317}
 --- !u!1 &643718671
 GameObject:
   m_ObjectHideFlags: 0
@@ -13611,7 +13577,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &643718672
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13831,8 +13797,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1830734297}
-  border: {fileID: 493563152}
 --- !u!1 &644483877
 GameObject:
   m_ObjectHideFlags: 0
@@ -14129,8 +14093,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 2096034421}
-  border: {fileID: 80349041}
 --- !u!1 &649515713
 GameObject:
   m_ObjectHideFlags: 0
@@ -14293,8 +14255,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1049040333}
-  border: {fileID: 1423487928}
 --- !u!1 &651539865
 GameObject:
   m_ObjectHideFlags: 0
@@ -14312,7 +14272,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &651539866
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14580,7 +14540,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &659194934
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14859,8 +14819,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 762891332}
-  border: {fileID: 411822359}
 --- !u!1 &684703092
 GameObject:
   m_ObjectHideFlags: 0
@@ -14878,7 +14836,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &684703093
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14953,7 +14911,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &688118698
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15087,7 +15045,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &701452396
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15296,7 +15254,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &717574836
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15583,8 +15541,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1792040675}
-  border: {fileID: 773266922}
 --- !u!1 &737014974
 GameObject:
   m_ObjectHideFlags: 0
@@ -15602,7 +15558,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &737014975
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15677,7 +15633,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &738106331
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15956,8 +15912,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 149842257}
-  border: {fileID: 1517434734}
 --- !u!1 &739454200
 GameObject:
   m_ObjectHideFlags: 0
@@ -16109,7 +16063,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &748889439
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16256,7 +16210,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 5839408651322499508, guid: 244deb15122278f449dbb68de8f29d3c, type: 3}
-  boxCellPrefab: {fileID: 6460033602778945414, guid: 7b69d698950ba3045bf7d267fc3b694b, type: 3}
   inputPanelPrefab: {fileID: 47937637991977052, guid: f3036fbd9bee2f44783cbe0d8b09ecfe, type: 3}
   board: {fileID: 1987430072}
   levelText: {fileID: 616116399}
@@ -16271,6 +16224,7 @@ MonoBehaviour:
   - {fileID: 2130811244}
   - {fileID: 464244384}
   - {fileID: 2114908097}
+  boxPrefab: {fileID: 8133369221650282417, guid: 9ad408287a586ad40a1f9b4c617f8b36, type: 3}
 --- !u!4 &752126476
 Transform:
   m_ObjectHideFlags: 0
@@ -16303,7 +16257,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &762891331
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16437,7 +16391,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &764850513
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16716,8 +16670,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 2051582736}
-  border: {fileID: 1814430196}
 --- !u!1 &773266920
 GameObject:
   m_ObjectHideFlags: 0
@@ -16735,7 +16687,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &773266921
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16955,8 +16907,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 177120747}
-  border: {fileID: 2063640107}
 --- !u!1 &786559131
 GameObject:
   m_ObjectHideFlags: 0
@@ -17376,7 +17326,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &802810185
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17451,7 +17401,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &806255511
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17671,8 +17621,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1346117799}
-  border: {fileID: 737014976}
 --- !u!1 &811733705
 GameObject:
   m_ObjectHideFlags: 0
@@ -17690,7 +17638,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &811733706
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17824,7 +17772,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &813781109
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17899,7 +17847,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &815735438
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17974,7 +17922,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &820868086
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18320,8 +18268,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 8216550}
-  border: {fileID: 950433691}
 --- !u!1 &839464040
 GameObject:
   m_ObjectHideFlags: 0
@@ -18339,7 +18285,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &839464041
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18559,8 +18505,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 911649357}
-  border: {fileID: 91535605}
 --- !u!1 &851344379
 GameObject:
   m_ObjectHideFlags: 0
@@ -18712,7 +18656,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &859281485
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19125,8 +19069,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1094447426}
-  border: {fileID: 1351946874}
 --- !u!1 &867011116
 GameObject:
   m_ObjectHideFlags: 0
@@ -19144,7 +19086,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &867011117
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19412,7 +19354,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &883316400
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19546,7 +19488,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &883527352
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19766,8 +19708,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1100909867}
-  border: {fileID: 813781110}
 --- !u!1 &911532376
 GameObject:
   m_ObjectHideFlags: 0
@@ -19785,7 +19725,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &911532377
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19860,7 +19800,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &911649356
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20273,8 +20213,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 253390083}
-  border: {fileID: 342200239}
 --- !u!1 &943555963
 GameObject:
   m_ObjectHideFlags: 0
@@ -20292,7 +20230,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &943555964
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20426,7 +20364,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &947230528
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20560,7 +20498,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &950433690
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20635,7 +20573,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &951946844
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20914,8 +20852,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 538709674}
-  border: {fileID: 550273236}
 --- !u!1 &960909166
 GameObject:
   m_ObjectHideFlags: 0
@@ -21212,8 +21148,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 748889440}
-  border: {fileID: 370917968}
 --- !u!1 &974925569
 GameObject:
   m_ObjectHideFlags: 0
@@ -21376,8 +21310,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 951946845}
-  border: {fileID: 302504187}
 --- !u!1 &988821011
 GameObject:
   m_ObjectHideFlags: 0
@@ -21540,8 +21472,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 249480885}
-  border: {fileID: 1951033738}
 --- !u!1 &989597857
 GameObject:
   m_ObjectHideFlags: 0
@@ -21704,8 +21634,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1819419983}
-  border: {fileID: 1363981133}
 --- !u!1 &991684387
 GameObject:
   m_ObjectHideFlags: 0
@@ -21991,7 +21919,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1002987990
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22125,7 +22053,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1005826532
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22200,7 +22128,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1024641048
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22275,7 +22203,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1034088588
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22409,7 +22337,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1049040332
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22543,7 +22471,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1051777082
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22677,7 +22605,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1052056449
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22897,8 +22825,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1660779979}
-  border: {fileID: 1168390681}
 --- !u!1 &1070798222
 GameObject:
   m_ObjectHideFlags: 0
@@ -23061,8 +22987,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 108943630}
-  border: {fileID: 1106955161}
 --- !u!1 &1071863101
 GameObject:
   m_ObjectHideFlags: 0
@@ -23359,8 +23283,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 688118699}
-  border: {fileID: 1829732917}
 --- !u!1 &1083384618
 GameObject:
   m_ObjectHideFlags: 0
@@ -23523,8 +23445,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 600947177}
-  border: {fileID: 1796212323}
 --- !u!1 &1094447424
 GameObject:
   m_ObjectHideFlags: 0
@@ -23542,7 +23462,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1094447425
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23676,7 +23596,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1100909866
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23955,8 +23875,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 203752783}
-  border: {fileID: 1413232116}
 --- !u!1 &1106955159
 GameObject:
   m_ObjectHideFlags: 0
@@ -23974,7 +23892,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1106955160
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24049,7 +23967,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1115569656
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24403,8 +24321,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1302041862}
-  border: {fileID: 425788576}
 --- !u!1 &1126704786
 GameObject:
   m_ObjectHideFlags: 0
@@ -24567,8 +24483,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 651539867}
-  border: {fileID: 1602002575}
 --- !u!1 &1129839920
 GameObject:
   m_ObjectHideFlags: 0
@@ -24720,7 +24634,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1156596277
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24940,8 +24854,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 402199807}
-  border: {fileID: 802810186}
 --- !u!1 &1159282374
 GameObject:
   m_ObjectHideFlags: 0
@@ -25026,7 +24938,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1165139300
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25101,7 +25013,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1166260316
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25176,7 +25088,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1166727724
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25251,7 +25163,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1168390680
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25471,8 +25383,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 437680771}
-  border: {fileID: 2044529741}
 --- !u!1 &1194580256
 GameObject:
   m_ObjectHideFlags: 0
@@ -25635,8 +25545,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 121194046}
-  border: {fileID: 384694195}
 --- !u!1 &1195036912
 GameObject:
   m_ObjectHideFlags: 0
@@ -25933,8 +25841,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 600404739}
-  border: {fileID: 1024641049}
 --- !u!1 &1209172678
 GameObject:
   m_ObjectHideFlags: 0
@@ -26097,8 +26003,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 26836227}
-  border: {fileID: 90304473}
 --- !u!1 &1225146999
 GameObject:
   m_ObjectHideFlags: 0
@@ -26116,7 +26020,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1225147000
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26191,7 +26095,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1230446050
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26325,7 +26229,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1257765277
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26459,7 +26363,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1262522817
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26727,7 +26631,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1272384228
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26802,7 +26706,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1283363754
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26877,7 +26781,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1302041861
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27156,8 +27060,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 811733707}
-  border: {fileID: 1005826533}
 --- !u!1 &1315467776
 GameObject:
   m_ObjectHideFlags: 0
@@ -27454,8 +27356,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 97598182}
-  border: {fileID: 815735439}
 --- !u!1 &1330913907
 GameObject:
   m_ObjectHideFlags: 0
@@ -27752,8 +27652,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1002987991}
-  border: {fileID: 12423513}
 --- !u!1 &1335294249
 GameObject:
   m_ObjectHideFlags: 0
@@ -27771,7 +27669,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1335294250
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27972,7 +27870,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1346117798
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28106,7 +28004,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1351946873
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28460,8 +28358,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 867011118}
-  border: {fileID: 576910114}
 --- !u!1 &1363845853
 GameObject:
   m_ObjectHideFlags: 0
@@ -28624,8 +28520,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1630466653}
-  border: {fileID: 1906008438}
 --- !u!1 &1363981131
 GameObject:
   m_ObjectHideFlags: 0
@@ -28643,7 +28537,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1363981132
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28863,8 +28757,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1680139323}
-  border: {fileID: 1115569657}
 --- !u!1 &1380501565
 GameObject:
   m_ObjectHideFlags: 0
@@ -29027,8 +28919,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 374635949}
-  border: {fileID: 1708791295}
 --- !u!1 &1410240104
 GameObject:
   m_ObjectHideFlags: 0
@@ -29180,7 +29070,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1413232115
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29255,7 +29145,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1414864270
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29389,7 +29279,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1423487927
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29609,8 +29499,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1492290521}
-  border: {fileID: 883527353}
 --- !u!1 &1433058669
 GameObject:
   m_ObjectHideFlags: 0
@@ -29628,7 +29516,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1433058670
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30041,8 +29929,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1574893577}
-  border: {fileID: 487267708}
 --- !u!1 &1455054365
 GameObject:
   m_ObjectHideFlags: 0
@@ -30060,7 +29946,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1455054366
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30194,7 +30080,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1477759796
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30548,8 +30434,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 514464199}
-  border: {fileID: 1954735431}
 --- !u!1 &1492290519
 GameObject:
   m_ObjectHideFlags: 0
@@ -30567,7 +30451,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1492290520
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30701,7 +30585,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1493524252
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30776,7 +30660,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1497495401
 RectTransform:
   m_ObjectHideFlags: 0
@@ -31055,8 +30939,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1954594758}
-  border: {fileID: 806255512}
 --- !u!1 &1501479235
 GameObject:
   m_ObjectHideFlags: 0
@@ -31208,7 +31090,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1517434733
 RectTransform:
   m_ObjectHideFlags: 0
@@ -31283,7 +31165,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1519051780
 RectTransform:
   m_ObjectHideFlags: 0
@@ -31693,7 +31575,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1568043345
 RectTransform:
   m_ObjectHideFlags: 0
@@ -31972,8 +31854,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 659194935}
-  border: {fileID: 1493524253}
 --- !u!1 &1574893575
 GameObject:
   m_ObjectHideFlags: 0
@@ -31991,7 +31871,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1574893576
 RectTransform:
   m_ObjectHideFlags: 0
@@ -32259,7 +32139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1590045370
 RectTransform:
   m_ObjectHideFlags: 0
@@ -32538,8 +32418,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 214440567}
-  border: {fileID: 1166727725}
 --- !u!1 &1602002573
 GameObject:
   m_ObjectHideFlags: 0
@@ -32557,7 +32435,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1602002574
 RectTransform:
   m_ObjectHideFlags: 0
@@ -32632,7 +32510,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1627949665
 RectTransform:
   m_ObjectHideFlags: 0
@@ -32707,7 +32585,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1630466652
 RectTransform:
   m_ObjectHideFlags: 0
@@ -32841,7 +32719,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1659745317
 RectTransform:
   m_ObjectHideFlags: 0
@@ -32975,7 +32853,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1660779978
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33109,7 +32987,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1680139322
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33377,7 +33255,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1699489308
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33720,7 +33598,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1708791294
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33940,8 +33818,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 738106332}
-  border: {fileID: 1997219528}
 --- !u!1 &1729926249
 GameObject:
   m_ObjectHideFlags: 0
@@ -33959,7 +33835,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1729926250
 RectTransform:
   m_ObjectHideFlags: 0
@@ -34302,7 +34178,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1758481578
 RectTransform:
   m_ObjectHideFlags: 0
@@ -34511,7 +34387,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1762093360
 RectTransform:
   m_ObjectHideFlags: 0
@@ -34731,8 +34607,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 859281486}
-  border: {fileID: 1964019198}
 --- !u!1 &1792040673
 GameObject:
   m_ObjectHideFlags: 0
@@ -34750,7 +34624,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1792040674
 RectTransform:
   m_ObjectHideFlags: 0
@@ -35018,7 +34892,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1796212322
 RectTransform:
   m_ObjectHideFlags: 0
@@ -35238,8 +35112,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 93270972}
-  border: {fileID: 2120338568}
 --- !u!1 &1814430194
 GameObject:
   m_ObjectHideFlags: 0
@@ -35257,7 +35129,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1814430195
 RectTransform:
   m_ObjectHideFlags: 0
@@ -35332,7 +35204,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1819419982
 RectTransform:
   m_ObjectHideFlags: 0
@@ -35466,7 +35338,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1819687117
 RectTransform:
   m_ObjectHideFlags: 0
@@ -35745,8 +35617,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 608673886}
-  border: {fileID: 255760053}
 --- !u!1 &1829732915
 GameObject:
   m_ObjectHideFlags: 0
@@ -35764,7 +35634,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1829732916
 RectTransform:
   m_ObjectHideFlags: 0
@@ -35839,7 +35709,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1830734296
 RectTransform:
   m_ObjectHideFlags: 0
@@ -36107,7 +35977,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1834932057
 RectTransform:
   m_ObjectHideFlags: 0
@@ -36461,8 +36331,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1989385876}
-  border: {fileID: 1729926251}
 --- !u!1 &1860352305
 GameObject:
   m_ObjectHideFlags: 0
@@ -36480,7 +36348,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1860352306
 RectTransform:
   m_ObjectHideFlags: 0
@@ -36759,8 +36627,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1230446051}
-  border: {fileID: 1156596278}
 --- !u!1 &1879927295
 GameObject:
   m_ObjectHideFlags: 0
@@ -37267,8 +37133,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1051777083}
-  border: {fileID: 684703094}
 --- !u!1 &1895064214
 GameObject:
   m_ObjectHideFlags: 0
@@ -37431,8 +37295,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1497495402}
-  border: {fileID: 212915499}
 --- !u!1 &1906008436
 GameObject:
   m_ObjectHideFlags: 0
@@ -37450,7 +37312,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1906008437
 RectTransform:
   m_ObjectHideFlags: 0
@@ -37659,7 +37521,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1909201413
 RectTransform:
   m_ObjectHideFlags: 0
@@ -37793,7 +37655,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1916011560
 RectTransform:
   m_ObjectHideFlags: 0
@@ -38211,8 +38073,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 204570633}
-  border: {fileID: 701452397}
 --- !u!1 &1922560994
 GameObject:
   m_ObjectHideFlags: 0
@@ -38375,8 +38235,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1967515311}
-  border: {fileID: 911532378}
 --- !u!1 &1928600901
 GameObject:
   m_ObjectHideFlags: 0
@@ -38539,8 +38397,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 561669523}
-  border: {fileID: 1519051781}
 --- !u!1 &1943278522
 GameObject:
   m_ObjectHideFlags: 0
@@ -38703,8 +38559,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 820868087}
-  border: {fileID: 95288810}
 --- !u!1 &1945781278
 GameObject:
   m_ObjectHideFlags: 0
@@ -38867,8 +38721,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 2145585295}
-  border: {fileID: 1970308039}
 --- !u!1 &1946657042
 GameObject:
   m_ObjectHideFlags: 0
@@ -39031,8 +38883,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 943555965}
-  border: {fileID: 349262487}
 --- !u!1 &1951033736
 GameObject:
   m_ObjectHideFlags: 0
@@ -39050,7 +38900,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1951033737
 RectTransform:
   m_ObjectHideFlags: 0
@@ -39258,7 +39108,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1954594757
 RectTransform:
   m_ObjectHideFlags: 0
@@ -39392,7 +39242,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1954735430
 RectTransform:
   m_ObjectHideFlags: 0
@@ -39467,7 +39317,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1964019197
 RectTransform:
   m_ObjectHideFlags: 0
@@ -39542,7 +39392,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1967515310
 RectTransform:
   m_ObjectHideFlags: 0
@@ -39676,7 +39526,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1970308038
 RectTransform:
   m_ObjectHideFlags: 0
@@ -39751,7 +39601,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1975588053
 RectTransform:
   m_ObjectHideFlags: 0
@@ -39992,7 +39842,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1989385875
 RectTransform:
   m_ObjectHideFlags: 0
@@ -40271,8 +40121,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1860352307}
-  border: {fileID: 1834932058}
 --- !u!1 &1997219526
 GameObject:
   m_ObjectHideFlags: 0
@@ -40290,7 +40138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1997219527
 RectTransform:
   m_ObjectHideFlags: 0
@@ -40778,8 +40626,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1262522818}
-  border: {fileID: 12715669}
 --- !u!1 &2022137840
 GameObject:
   m_ObjectHideFlags: 0
@@ -40797,7 +40643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2022137841
 RectTransform:
   m_ObjectHideFlags: 0
@@ -41076,8 +40922,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 947230529}
-  border: {fileID: 604799791}
 --- !u!1 &2037689062
 GameObject:
   m_ObjectHideFlags: 0
@@ -41229,7 +41073,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2044529740
 RectTransform:
   m_ObjectHideFlags: 0
@@ -41304,7 +41148,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2051582735
 RectTransform:
   m_ObjectHideFlags: 0
@@ -41583,8 +41427,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1034088589}
-  border: {fileID: 1762093361}
 --- !u!1 &2062868422
 GameObject:
   m_ObjectHideFlags: 0
@@ -41736,7 +41578,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2063640106
 RectTransform:
   m_ObjectHideFlags: 0
@@ -42358,8 +42200,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1975588054}
-  border: {fileID: 643718673}
 --- !u!1 &2096034419
 GameObject:
   m_ObjectHideFlags: 0
@@ -42377,7 +42217,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2096034420
 RectTransform:
   m_ObjectHideFlags: 0
@@ -42712,7 +42552,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2120338567
 RectTransform:
   m_ObjectHideFlags: 0
@@ -42932,8 +42772,6 @@ MonoBehaviour:
   buttonImageColor:
     serializedVersion: 2
     rgba: 4287343824
-  topNumber: {fileID: 1590045371}
-  border: {fileID: 1052056450}
 --- !u!1 &2130811241
 GameObject:
   m_ObjectHideFlags: 0
@@ -43286,7 +43124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2145585294
 RectTransform:
   m_ObjectHideFlags: 0

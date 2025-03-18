@@ -4,18 +4,9 @@ public class Player : MonoBehaviour
 {
     public Vector2Int position;
     public Vector2Int direction = Vector2Int.zero;
-    //public GridNum gridNum;
-    public Cell[,] cells;
-    public BoxCell boxCellPrefab;
-    //public Canvas board;
-    //public float moveSpeed = 5f;
-
-    private Rigidbody2D rb;
-
-    private void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
+    public Box[,] boxes;
+    public Box boxPrefab;
+    public Canvas board;
 
     private void Update()
     {
@@ -28,64 +19,91 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
-            newPosition = new Vector2Int(newPosition.x, newPosition.y - 1);
             direction = Vector2Int.up;
-            Debug.Log("current position : " + position);
-            MoveTo(newPosition);
+            newPosition -= direction;
 
-            Debug.Log("target position : " + position);
+            if (IsValidMove(newPosition))
+            {
+                Debug.Log("newposition arrary out :" + newPosition);
+                Debug.Log("arrart out : " + direction);
+                MoveTo(newPosition);
+                PushBox(newPosition, NextPos(newPosition, direction));
+                
+            }
         }
         else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            newPosition = new Vector2Int(newPosition.x - 1, newPosition.y);
             direction = Vector2Int.left;
-            Debug.Log("current position : " + position);
-            MoveTo(newPosition);
+            newPosition += direction;
 
-            Debug.Log("target position : " + position);
+            if (IsValidMove(newPosition))
+            {
+                Debug.Log("newposition arrary out :" + newPosition);
+                Debug.Log("arrart out : " + direction);
+                MoveTo(newPosition);
+                PushBox(newPosition, NextPos(newPosition, direction));
+                
+            }
         }
         else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
-            newPosition = new Vector2Int(newPosition.x, newPosition.y + 1);
             direction = Vector2Int.down;
-            Debug.Log("current position : " + position);
-            MoveTo(newPosition);
+            newPosition -= direction;
 
-            Debug.Log("target position : " + position);
+            if (IsValidMove(newPosition))
+            {
+                Debug.Log("newposition arrary out :" + newPosition);
+                Debug.Log("arrart out : " + direction);
+                MoveTo(newPosition);
+                PushBox(newPosition, NextPos(newPosition, direction));
+                
+            }
         }
         else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
-            newPosition = new Vector2Int(newPosition.x + 1, newPosition.y);
             direction = Vector2Int.right;
-            Debug.Log("current position : " + position);
-            MoveTo(newPosition);
+            newPosition += direction;
 
-            Debug.Log("target position : " + position);
+            if (IsValidMove(newPosition))
+            {
+                Debug.Log("newposition arrary out :" + newPosition);
+                Debug.Log("arrart out : " + direction);
+                MoveTo(newPosition);
+                PushBox(newPosition, NextPos(newPosition, direction));
+                
+            }
         }
     }
 
     public void MoveTo(Vector2Int newPosition)
     {
-        if (IsValidMove(newPosition))
+        position = newPosition;
+        Box targetBox = boxes[position.y, position.x];
+        if (targetBox != null)
         {
-            position = newPosition;
-            Cell target = cells[position.y, position.x];
-            if (target != null)
-            {
-                Vector3 targetPosition = target.transform.position;
-                rb.MovePosition(targetPosition);
-            }
+            Vector3 targetPosition = targetBox.transform.position;
+            transform.position = targetPosition;
         }
     }
 
-    private bool IsValidMove(Vector2Int newPosition)
+    private bool IsValidGrid(Vector2Int newPosition)
     {
         if (newPosition.x < 0 || newPosition.y < 0 || newPosition.x >= 9 || newPosition.y >= 9)
         {
             return false;
         }
-        Cell targetCell = cells[newPosition.y, newPosition.x];
-        if (targetCell.isBox)
+
+        return true;
+    }
+
+    private bool IsValidMove(Vector2Int newPosition)
+    {
+        if (!IsValidGrid(newPosition))
+        {
+            return false;
+        }
+        Box targetBox = boxes[newPosition.y, newPosition.x];
+        if (targetBox.isBox)
         {
             if (!BoxIsValid(newPosition))
             {
@@ -93,64 +111,44 @@ public class Player : MonoBehaviour
             }
         }
 
-        return targetCell != null;
+        //return targetBox != null;
+        return true;
+    }
+
+    private Vector2Int NextPos(Vector2Int newPosition, Vector2Int direction)
+    {
+        if (direction == Vector2Int.up)
+        {
+            return newPosition - direction;
+        }
+        else if (direction == Vector2Int.down)
+        {
+            return newPosition - direction;
+        }
+        else if (direction == Vector2Int.left)
+        {
+            return newPosition + direction;
+        }
+        else if (direction == Vector2Int.right)
+        {
+            return newPosition + direction;
+        }
+
+        return newPosition;
     }
 
     private bool BoxIsValid(Vector2Int newPosition)
     {
 
-        if (direction == Vector2Int.up)
+        Vector2Int nextPos = NextPos(newPosition, direction);
+        if (!IsValidGrid(nextPos))
         {
-            Vector2Int nextPos = new Vector2Int(newPosition.x, newPosition.y - 1);
-            if (nextPos.x < 0 || nextPos.y < 0 || nextPos.x >= 9 || nextPos.y >= 9)
-            {
-                return false;
-            }
-            Cell nextCell = cells[nextPos.y, nextPos.x];
-            if (nextCell.isBox)
-            {
-                return false;
-            }
-            PushBox(newPosition, nextPos);
-        } else if (direction == Vector2Int.down)
+            return false;
+        }
+        Box nextBox = boxes[nextPos.y, nextPos.x];
+        if (nextBox.isBox)
         {
-            Vector2Int nextPos = new Vector2Int(newPosition.x, newPosition.y + 1);
-            if (nextPos.x < 0 || nextPos.y < 0 || nextPos.x >= 9 || nextPos.y >= 9)
-            {
-                return false;
-            }
-            Cell nextCell = cells[nextPos.y, nextPos.x];
-            if (nextCell.isBox)
-            {
-                return false;
-            }
-            PushBox(newPosition, nextPos);
-        } else if (direction == Vector2Int.left)
-        {
-            Vector2Int nextPos = new Vector2Int(newPosition.x - 1, newPosition.y);
-            if (nextPos.x < 0 || nextPos.y < 0 || nextPos.x >= 9 || nextPos.y >= 9)
-            {
-                return false;
-            }
-            Cell nextCell = cells[nextPos.y, nextPos.x];
-            if (nextCell.isBox)
-            {
-                return false;
-            }
-            PushBox(newPosition, nextPos);
-        } else if (direction == Vector2Int.right)
-        {
-            Vector2Int nextPos = new Vector2Int(newPosition.x + 1, newPosition.y);
-            if (nextPos.x < 0 || nextPos.y < 0 || nextPos.x >= 9 || nextPos.y >= 9)
-            {
-                return false;
-            }
-            Cell nextCell = cells[nextPos.y, nextPos.x];
-            if (nextCell.isBox)
-            {
-                return false;
-            }
-            PushBox(newPosition, nextPos);
+            return false;
         }
 
         return true;
@@ -158,67 +156,44 @@ public class Player : MonoBehaviour
 
     private void PushBox(Vector2Int currentBoxPos, Vector2Int targetBoxPos)
     {
-        Cell currentCell = cells[currentBoxPos.y, currentBoxPos.x];
-        Cell nextCell = cells[targetBoxPos.y, targetBoxPos.x];
+        Box currentBox = boxes[currentBoxPos.y, currentBoxPos.x];
+        Box nextBox = boxes[targetBoxPos.y, targetBoxPos.x];
 
-        if (nextCell == null && currentCell == null)
+        if (currentBox == null || nextBox == null)
         {
-            Debug.LogError("currentCell is null , boxPos : " + currentBoxPos);
-            Debug.LogError("nextCell Ϊ null��boxPos: " + targetBoxPos);
+            Debug.LogError("currentBox is null , boxPos : " + currentBoxPos);
+            Debug.LogError("nextBox is null , boxPos: " + targetBoxPos);
             return;
         }
 
-        Vector3 boxOldPos = currentCell.transform.position;
-        Vector3 boxNewPos = nextCell.transform.position;
-        BoxCell currentBoxCell = currentCell as BoxCell;
-        int currentBoxCellNum = currentBoxCell.number;
-        //BoxCell nextBoxCell = nextCell as BoxCell;
-
-        if (currentBoxCell == null)
+        if (nextBox.value != 0)
         {
-            Debug.LogError("current��Ԫ���� BoxCell!");
+            Debug.Log("nextBox is not empty!");
             return;
         }
 
-        //currentBoxCell.MoveBox(currentBoxCell, boxNewPos);
-        Destroy(currentBoxCell.gameObject);
-        BoxCell newBoxCell = Instantiate(boxCellPrefab);
-        newBoxCell.InitBoxCell(currentBoxCellNum, boxNewPos);
-        cells[targetBoxPos.y, targetBoxPos.x] = newBoxCell;
-        cells[targetBoxPos.y, targetBoxPos.x].isBox = true;
+        Vector3 boxOldPos = currentBox.transform.position;
+        Vector3 boxNewPos = nextBox.transform.position;
+        int currentBoxNum = currentBox.value;
 
-        if (currentCell is BoxCell)
-        {
-            cells[currentBoxPos.y, currentBoxPos.x].isBox = false;
-            cells[currentBoxPos.y, currentBoxPos.x].Init(0);
-            Debug.Log("position : " + currentBoxPos + "cells : " + cells[currentBoxPos.y, currentBoxPos.x]);
-            Debug.Log("position : " + targetBoxPos + "cells : " + cells[targetBoxPos.y, targetBoxPos.x]);
-        }
-        // cells[currentBoxPos.y, currentBoxPos.x].isBox = false;
-        // cells[currentBoxPos.y, currentBoxPos.x].Init(0);
+        Destroy(currentBox.gameObject);
+        Destroy(nextBox.gameObject);
+        Box oldBox = Instantiate(boxPrefab, board.transform);
+        oldBox.Init(0, boxOldPos);
+        boxes[currentBoxPos.y, currentBoxPos.x] = oldBox;
         
-
-        //cells[currentBoxPos.y, currentBoxPos.x].isBox = false;
-        //cells[currentBoxPos.y, currentBoxPos.x] = currentCell.Init(0);
-        //nextCell = currentBoxCell;
-        //nextCell.isBox = true;
-        //cells[targetBoxPos.y, targetBoxPos.x] = currentBoxCell;
-        //currentBoxCell.DestroyBox();
-        Debug.Log("position : " + currentBoxPos + "cells : " + cells[currentBoxPos.y, currentBoxPos.x]);
-        Debug.Log("position : " + targetBoxPos + "cells : " + cells[targetBoxPos.y, targetBoxPos.x]);
-        // currentCell = currentBoxCell.GetComponent<Cell>();
-        // currentCell.Init(0);
-        // currentCell.isBox = false;
-        // cells[currentBoxPos.y, currentBoxPos.x] = currentCell;
+        Box newBox = Instantiate(boxPrefab, board.transform);
+        newBox.Init(currentBoxNum, boxNewPos);
+        boxes[targetBoxPos.y, targetBoxPos.x] = newBox;
 
         position = currentBoxPos;
         transform.position = boxOldPos;
     }
 
-    public void InitializePlayer(Vector2Int initialLogicalPos, Vector3 initialWorldPos, Cell[,] cells)
+    public void InitializePlayer(Vector2Int initialLogicalPos, Vector3 initialWorldPos, Box[,] boxes)
     {
         transform.position = initialWorldPos;
         this.position = initialLogicalPos;
-        this.cells = cells;
+        this.boxes = boxes;
     }
 }

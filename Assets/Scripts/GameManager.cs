@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
         BoxCell,
     }
 
-    public BoxCell boxCellPrefab;
+    //public BoxCell boxCellPrefab;
     public InputPanel inputPanelPrefab;
     public Canvas board;
     public TextMeshProUGUI levelText;
@@ -22,6 +22,11 @@ public class GameManager : MonoBehaviour
     private InputPanel currentInputPanel;
     private bool hasGameFinished;
     private Cell[,] cells;
+    //new boxes array
+    private Box[,] boxes;
+    public Box boxPrefab;
+    private Box selectedBox;
+    //new box end
     private Cell selectedCell;
     private int[,] initialPuzzle;
     private float currentTime;
@@ -50,6 +55,9 @@ public class GameManager : MonoBehaviour
         hasGameFinished = false;
         cells = new Cell[GRID_SIZE, GRID_SIZE];
         selectedCell = null;
+
+        boxes = new Box[GRID_SIZE, GRID_SIZE];
+        selectedBox = null;
 
         //SpawnCells();
         string gameMode = PlayerPrefs.GetString("GameMode", "Sudoku");
@@ -110,7 +118,8 @@ public class GameManager : MonoBehaviour
             for (int j = 0; j < GRID_SIZE; j++)
             {
                 initialPuzzle[i, j] = puzzleGrid[i, j];
-                //Debug.Log("puzzlegrid" + puzzleGrid[i, j]);
+                //Debug.Log("puzzlegrid i : " + i + "puzzlegrid j : " + j + " array : " + puzzleGrid[i, j]);
+                // (0,0)(0,1)(0,2)(0,3)(0,4)(0,5)(0,6)(0,7)(0,8)
             }
         }
 
@@ -135,21 +144,24 @@ public class GameManager : MonoBehaviour
                 switch (bigLevelType)
                 {
                     case BigLevelType.BoxCell:
-                        if (cellValue != 0)
-                        {
-                            BoxCell boxCell = Instantiate(boxCellPrefab, board.transform);
-                            //Cell cellCell = cells[cell.row, cell.col];
-                            boxCell.InitBoxCell(cellValue, cellPosition);
-                            //boxCell.SpawnBox(cellCell, cellValue);
-                            cells[cell.row, cell.col] = boxCell;
-                            cells[cell.row, cell.col].isBox = true;
-                        }
-                        else
-                        {
-                            cell.Init(cellValue);
-                            cells[cell.row, cell.col] = cell;
-                            cells[cell.row, cell.col].isBox = false;
-                        }
+                        Box box = Instantiate(boxPrefab, board.transform);
+                        box.Init(cellValue, cellPosition);
+                        boxes[cell.row, cell.col] = box;
+                        // if (cellValue != 0)
+                        // {
+                        //     BoxCell boxCell = Instantiate(boxCellPrefab, board.transform);
+                        //     //Cell cellCell = cells[cell.row, cell.col];
+                        //     boxCell.InitBoxCell(cellValue, cellPosition);
+                        //     //boxCell.SpawnBox(cellCell, cellValue);
+                        //     cells[cell.row, cell.col] = boxCell;
+                        //     cells[cell.row, cell.col].isBox = true;
+                        // }
+                        // else
+                        // {
+                        //     cell.Init(cellValue);
+                        //     cells[cell.row, cell.col] = cell;
+                        //     cells[cell.row, cell.col].isBox = false;
+                        // }
                         break;
 
                     case BigLevelType.Sudoku:
@@ -159,7 +171,15 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-        InitializePlayerPosition();
+        switch (bigLevelType)
+        {
+            case BigLevelType.BoxCell:
+                InitializePlayerPosition();
+                break;
+
+            case BigLevelType.Sudoku:
+                break;
+        }
     }
 
     private void InitializePlayerPosition()
@@ -182,7 +202,7 @@ public class GameManager : MonoBehaviour
         while (attempts < maxRetries)
         {
             int index = Random.Range(0, 9);
-            Cell playerCell = cells[cellArr[index].row, cellArr[index].col];
+            Box playerCell = boxes[cellArr[index].row, cellArr[index].col];
 
             if (!playerCell.isBox)
             {
@@ -190,7 +210,8 @@ public class GameManager : MonoBehaviour
                 Vector2Int playerLogicalPos = new Vector2Int(cellArr[index].col, cellArr[index].row);
                 Vector3 playerWorldPos = playerCell.transform.position;
                 Player player = Instantiate(playerPrefab, board.transform);
-                player.InitializePlayer(playerLogicalPos, playerWorldPos, cells);
+                player.InitializePlayer(playerLogicalPos, playerWorldPos, boxes);
+                player.board = this.board;
                 return;
             }
             
@@ -236,12 +257,14 @@ public class GameManager : MonoBehaviour
     {
         hasGameFinished = false;
         selectedCell = null;
+        selectedBox = null;
 
         for (int i = 0; i < GRID_SIZE; i++)
         {
             for (int j = 0; j < GRID_SIZE; j++)
             {
                 cells[i, j].Init(initialPuzzle[i, j]);
+                // boxes.init
             }
         }
 
@@ -287,14 +310,27 @@ public class GameManager : MonoBehaviour
 
     public void UpdateCellValue(int value)
     {
-        if (hasGameFinished || selectedCell == null)
+        string gameMode = PlayerPrefs.GetString("GameMode", "Sudoku");
+        if (gameMode == "Sudoku")
         {
-            return;
+            if (hasGameFinished || selectedCell == null)
+            {
+                return;
+            }
+            selectedCell.UpdateValue(value);
+            HighLight();
+            CheckWin(BigLevelType.Sudoku);
         }
-
-        selectedCell.UpdateValue(value);
-        HighLight();
-        CheckWin();
+        else if (gameMode == "BoxCell")
+        {
+            if (hasGameFinished || selectedBox == null)
+            {
+                return;
+            }
+            selectedBox.UpdateValue(value);
+            CheckWin(BigLevelType.BoxCell);
+        }
+        //CheckWin();
     }
 
     private void HighLight()
@@ -363,15 +399,26 @@ public class GameManager : MonoBehaviour
         return true;
     }
 
-    private void CheckWin()
+    private void CheckWin(BigLevelType bigLevelType)
     {
         for (int i = 0; i < GRID_SIZE; i++)
         {
             for (int j = 0; j < GRID_SIZE; j++)
             {
-                if (cells[i, j].isIncorrect || cells[i, j].value == 0)
+                switch (bigLevelType)
                 {
-                    return;
+                    case BigLevelType.BoxCell:
+                        if (boxes[i, j].isIncorrect || boxes[i, j].value == 0)
+                        {
+                            return;
+                        }
+                        break;
+                    case BigLevelType.Sudoku:
+                        if (cells[i, j].isIncorrect || cells[i, j].value == 0)
+                        {
+                            return;
+                        }
+                        break;
                 }
             }
         }
@@ -398,11 +445,11 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        if (cell.isBox)
-        {
-            Debug.Log("cell is box is true");
-            return;
-        }
+        // if (cell.isBox)
+        // {
+        //     Debug.Log("cell is box is true");
+        //     return;
+        // }
 
         ResetGrid();
         selectedCell = cell;
@@ -410,9 +457,21 @@ public class GameManager : MonoBehaviour
         ShowInputPanel();
     }
 
+    public void OnBoxSelected(Box box)
+    {
+        if (hasGameFinished)
+        {
+            return;
+        }
+
+        Debug.Log("box is selected");
+        selectedBox = box;
+        ShowInputPanel();
+    }
+
     private void ResetGrid()
     {
-        for (int i = 0; i < GRID_SIZE;i++)
+        for (int i = 0; i < GRID_SIZE; i++)
         {
             for (int j = 0; j < GRID_SIZE; j++)
             {

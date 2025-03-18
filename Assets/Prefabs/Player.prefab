@@ -115,8 +115,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   position: {x: 0, y: 0}
   direction: {x: 0, y: 0}
+  boxPrefab: {fileID: 8133369221650282417, guid: 9ad408287a586ad40a1f9b4c617f8b36, type: 3}
   boxCellPrefab: {fileID: 6460033602778945414, guid: 7b69d698950ba3045bf7d267fc3b694b, type: 3}
-  board: {fileID: 0}
 --- !u!1 &7667785062617960361
 GameObject:
   m_ObjectHideFlags: 0
