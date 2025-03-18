@@ -11,6 +11,8 @@ public class Box : MonoBehaviour
 
     public bool isBox = false;
     public int value;
+    public int row;
+    public int col;
     public bool isIncorrect;
 
     // private void Awake()
@@ -53,17 +55,38 @@ public class Box : MonoBehaviour
         int oldValue = value;
         value = newValue;
         int topValue = int.Parse(boxTopNumber.text);
-        if (topValue == value || oldValue == 0)
+
+        if (boxTopNumber.enabled)
         {
-            Debug.Log("anything");
-            boxTxtNumber.enabled = true;
-            boxTxtNumber.text = value.ToString();
+            if (topValue == value)
+            {
+                Debug.Log("update value!");
+                boxTxtNumber.enabled = true;
+                boxTxtNumber.text = value.ToString();
+            }
+            else
+            {
+                Debug.Log("txtnumber != topnumber");
+            }
         }
         else
         {
-            Debug.Log("txtnumber != topnumber");
-            return;
+            Debug.Log("update value directily!");
+            boxTxtNumber.enabled = true;
+            boxTxtNumber.text = value.ToString();
         }
+
+        // if (topValue == value || oldValue == 0)
+        // {
+        //     Debug.Log("anything");
+        //     boxTxtNumber.enabled = true;
+        //     boxTxtNumber.text = value.ToString();
+        // }
+        // else
+        // {
+        //     Debug.Log("txtnumber != topnumber");
+        //     return;
+        // }
     }
 
     private void OnBoxClicked()

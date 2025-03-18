@@ -2,11 +2,24 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public static Player instance;
     public Vector2Int position;
     public Vector2Int direction = Vector2Int.zero;
     public Box[,] boxes;
     public Box boxPrefab;
     public Canvas board;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     private void Update()
     {

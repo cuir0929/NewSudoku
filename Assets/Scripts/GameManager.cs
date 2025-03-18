@@ -93,7 +93,7 @@ public class GameManager : MonoBehaviour
         // generate sudoku grid remove cell is 28-34
         if (bigLevelType == BigLevelType.BoxCell)
         {
-            CreateAndStoreLevel(puzzleGrid, 350);
+            CreateAndStoreLevel(puzzleGrid, 50);
         }
         else
         {
@@ -147,21 +147,6 @@ public class GameManager : MonoBehaviour
                         Box box = Instantiate(boxPrefab, board.transform);
                         box.Init(cellValue, cellPosition);
                         boxes[cell.row, cell.col] = box;
-                        // if (cellValue != 0)
-                        // {
-                        //     BoxCell boxCell = Instantiate(boxCellPrefab, board.transform);
-                        //     //Cell cellCell = cells[cell.row, cell.col];
-                        //     boxCell.InitBoxCell(cellValue, cellPosition);
-                        //     //boxCell.SpawnBox(cellCell, cellValue);
-                        //     cells[cell.row, cell.col] = boxCell;
-                        //     cells[cell.row, cell.col].isBox = true;
-                        // }
-                        // else
-                        // {
-                        //     cell.Init(cellValue);
-                        //     cells[cell.row, cell.col] = cell;
-                        //     cells[cell.row, cell.col].isBox = false;
-                        // }
                         break;
 
                     case BigLevelType.Sudoku:
@@ -318,7 +303,7 @@ public class GameManager : MonoBehaviour
                 return;
             }
             selectedCell.UpdateValue(value);
-            HighLight();
+            HighLight(BigLevelType.Sudoku);
             CheckWin(BigLevelType.Sudoku);
         }
         else if (gameMode == "BoxCell")
@@ -328,34 +313,44 @@ public class GameManager : MonoBehaviour
                 return;
             }
             selectedBox.UpdateValue(value);
+            HighLight(BigLevelType.BoxCell);
             CheckWin(BigLevelType.BoxCell);
         }
         //CheckWin();
     }
 
-    private void HighLight()
+    private void HighLight(BigLevelType bigLevelType)
     {
         for (int i = 0; i < GRID_SIZE; i++)
         {
             for (int j = 0; j < GRID_SIZE; j++)
             {
-                cells[i, j].isIncorrect = !IsValid(cells[i, j], cells);
+                switch (bigLevelType)
+                {
+                    case BigLevelType.BoxCell:
+                        boxes[i, j].isIncorrect = !IsValidBox(boxes[i, j], boxes);
+                        break;
+                    case BigLevelType.Sudoku:
+                        cells[i, j].isIncorrect = !IsValid(cells[i, j], cells);
+                        break;
+                }
             }
         }
+        if (bigLevelType == BigLevelType.Sudoku)
+        { 
+            int currentRow = selectedCell.row;
+            int currentCol = selectedCell.col;
+            int zoomRow = currentRow - currentRow % ZOOM_SIZE;
+            int zoomCol = currentCol - currentCol % ZOOM_SIZE;
 
-        int currentRow = selectedCell.row;
-        int currentCol = selectedCell.col;
-        int zoomRow = currentRow - currentRow % ZOOM_SIZE;
-        int zoomCol = currentCol - currentCol % ZOOM_SIZE;
-
-        for (int i = 0; i < GRID_SIZE; i++)
-        {
-            cells[i, currentCol].HighLight();
-            cells[currentRow, i].HighLight();
-            cells[zoomRow + i % 3, zoomCol + i / 3].HighLight();
+            for (int i = 0; i < GRID_SIZE; i++)
+            {
+                cells[i, currentCol].HighLight();
+                cells[currentRow, i].HighLight();
+                cells[zoomRow + i % 3, zoomCol + i / 3].HighLight();
+            }
+            cells[currentRow, currentCol].Select();
         }
-
-        cells[currentRow, currentCol].Select();
     }
 
     private bool IsValid(Cell cell, Cell[,] cells)
@@ -399,8 +394,50 @@ public class GameManager : MonoBehaviour
         return true;
     }
 
+    private bool IsValidBox(Box box, Box[,] boxes)
+    {
+        int row = box.row;
+        int col = box.col;
+        int value = box.value;
+
+        box.value = 0;
+
+        if (value == 0)
+        {
+            return true;
+        }
+
+        for (int i = 0; i < GRID_SIZE; i++)
+        {
+            if (boxes[row, i].value == value || boxes[i, col].value == value)
+            {
+                box.value = value;
+                return false;
+            }
+        }
+
+        int zoomRow = row - row % ZOOM_SIZE;
+        int zoomCol = col - col % ZOOM_SIZE;
+
+        for (int r = zoomRow; r < zoomRow + ZOOM_SIZE; r++)
+        {
+            for (int c = zoomCol; c < zoomCol + ZOOM_SIZE; c++)
+            {
+                if (boxes[r, c].value == value)
+                {
+                    box.value = value;
+                    return false;
+                }
+            }
+        }
+
+        box.value = value;
+        return true;
+    }
+
     private void CheckWin(BigLevelType bigLevelType)
     {
+
         for (int i = 0; i < GRID_SIZE; i++)
         {
             for (int j = 0; j < GRID_SIZE; j++)
@@ -408,10 +445,16 @@ public class GameManager : MonoBehaviour
                 switch (bigLevelType)
                 {
                     case BigLevelType.BoxCell:
+                        Vector2Int playerPosition = Player.instance.position;
+                        if (i == playerPosition.y && j == playerPosition.x)
+                        {
+                            continue;
+                        }
                         if (boxes[i, j].isIncorrect || boxes[i, j].value == 0)
                         {
                             return;
                         }
+                        Debug.Log("box is correct!");
                         break;
                     case BigLevelType.Sudoku:
                         if (cells[i, j].isIncorrect || cells[i, j].value == 0)
@@ -453,7 +496,7 @@ public class GameManager : MonoBehaviour
 
         ResetGrid();
         selectedCell = cell;
-        HighLight();
+        HighLight(BigLevelType.Sudoku);
         ShowInputPanel();
     }
 
@@ -466,6 +509,7 @@ public class GameManager : MonoBehaviour
 
         Debug.Log("box is selected");
         selectedBox = box;
+        HighLight(BigLevelType.BoxCell);
         ShowInputPanel();
     }
 
